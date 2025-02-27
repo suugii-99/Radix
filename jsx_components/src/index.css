@@ -1,0 +1,113 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* Mörk bakgrund för dashboard */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff; /* Länkfärg */
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2; /* Hover färg för länkar */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 1rem; /* Mellanrum under rubriker */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a; /* Knappbakgrund */
+  color: white; /* Textfärg på knappar */
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff; /* Hover färg på knappar */
+  background-color: #2d2d2d; /* Mörkare bakgrund på hover */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Fokusindikation */
+}
+
+/* Använd för en mer responsiv layout */
+.card {
+  background-color: white; /* Kortbakgrund */
+  border-radius: 0.5rem; /* Rundade hörn */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Skugga för kort */
+}
+
+/* Stilar för tabeller */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2; /* Bakgrund för tabellrubriker */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547; /* Textfärg i ljust läge */
+    background-color: #ffffff; /* Bakgrund i ljust läge */
+  }
+  
+  a:hover {
+    color: #747bff; /* Hover färg för länkar i ljust läge */
+  }
+
+  button {
+    background-color: #f9f9f9; /* Bakgrund för knappar i ljust läge */
+    color: #213547; /* Textfärg på knappar i ljust läge */
+  }
+
+  .card {
+    background-color: #ffffff; /* Kortbakgrund i ljust läge */
+  }
+
+  .table th {
+    background-color: #eaeaea; /* Bakgrund för tabellrubriker i ljust läge */
+  }
+}
+
